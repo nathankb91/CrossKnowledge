@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  redis:
+    build:
+      context: ./docker/redis
+    ports:
+      - 6379:6379
+
+  php:
+    build:
+      context: ./docker/php
+    ports:
+      - "9000:9000"
+    volumes:
+      - "./www:/var/www/html"
+    links:
+      - redis
+
+  nginx:
+    build:
+      context: ./docker/nginx
+    volumes:
+      - "./www:/var/www/html"
+    ports:
+      - "8080-8082:8080-8082"
+    links:
+      - php

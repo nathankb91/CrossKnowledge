@@ -1,0 +1,65 @@
+.Poster {
+    width: 350px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    font-family: "Roboto";
+    font-weight: 300;
+    background-color: #f7f7f7;
+}
+
+.Poster-header {
+    padding:10px;
+    display: flex;
+}
+
+.Poster-info {
+    width:84%;
+}
+
+.Poster-ratings {
+    font-size: 13px;
+    width:16%;
+    padding-top: 6px;
+}
+
+.Poster-footer {
+    font-size: 17px;
+    padding: 0px 10px 10px;
+}
+
+.Poster-title {
+    font-weight: 600;
+}
+
+.Poster-time-length {
+    padding-top: 10px;
+}
+
+.Poster-rotten-tomatoes-logo {
+    width: 20px;
+}
+
+.Poster-box {
+    position:relative;
+}
+
+.Poster-img {
+    width: 100%;
+}
+
+.Poster-review-button {
+    background-color: rgba(165,165,164,0.9);
+    border: 1px solid #fff;
+    padding: 14px 70px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    position: absolute;
+    bottom: 37px;
+    left: 68px;
+}
+
+.Poster-review-button:hover {
+    background-color: #7d7d7d;
+}
